@@ -56,9 +56,6 @@ a{
 li {
     list-style-type: none;
 }
-p span {
-    display: block;
-}
 
 p{
   font-family: Optima, sans-serif;
@@ -68,11 +65,12 @@ p{
   white-space: pre-line;
 }
 
-p1{
+h2{
   font-family: Optima, sans-serif;
   font-size: 18px;
   margin-top: auto;
   margin-bottom: auto;
+  font-weight: 100;
 }
 
 input {

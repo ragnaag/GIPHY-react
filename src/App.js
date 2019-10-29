@@ -17,15 +17,10 @@ class App extends Component {
     this.state = {
         gifs: [],
         trending:[],
-        click: false
     }
 
     this.handleTermChange = this.handleTermChange.bind(this);
-    this.handleHover = this.handleHover.bind(this);
-}
-  handleHover(active) {
-    this.setState({isHover: active});
-  }
+    }
 
   handleTermChange(term) {
     const url = `http://api.giphy.com/v1/gifs/search?q=${term.replace(/\s/g, '+')}&api_key=3yzgPw8SRGSVovhRU5OkDPfKx4vOq5BY`;
@@ -53,7 +48,7 @@ class App extends Component {
       <BrowserRouter>
       <div className="App">
         <header className="header">
-          <p>Welcome to GIPHY-generator! <span></span> <p1>Search and enjoy your favorite GIPHY's</p1></p>
+          <p>Welcome to GIPHY-generator! <span></span> <h2>Search and enjoy your favorite GIPHY's</h2></p>
           <a href= 'https://developers.giphy.com/' style={{ textDecoration: 'none', color: 'black', padding:'10px'}}>Powered by GIPHY</a>
         </header>
         <hr/>
