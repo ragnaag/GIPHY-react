@@ -16,7 +16,7 @@ class App extends Component {
 
     this.state = {
         gifs: [],
-        trending:[],
+        trending:[]
     }
 
     this.handleTermChange = this.handleTermChange.bind(this);
@@ -30,7 +30,8 @@ class App extends Component {
  }
 
  trending(){
-   request.get(`http://api.giphy.com/v1/gifs/trending?api_key=3yzgPw8SRGSVovhRU5OkDPfKx4vOq5BY`, (err, res) => {
+   request.get(`http://api.giphy.com/v1/gifs/trending?api_key=3yzgPw8SRGSVovhRU5OkDPfKx4vOq5BY`,
+     (err, res) => {
        this.setState({ trending: res.body.data })
    });
  }
@@ -48,8 +49,11 @@ class App extends Component {
       <BrowserRouter>
       <div className="App">
         <header className="header">
-          <p>Welcome to GIPHY-generator! <span></span> <h2>Search and enjoy your favorite GIPHY's</h2></p>
-          <a href= 'https://developers.giphy.com/' style={{ textDecoration: 'none', color: 'black', padding:'10px'}}>Powered by GIPHY</a>
+          <h1>Welcome to GIPHY-generator! <span></span>
+          <h2>Search and enjoy your favorite GIPHY's</h2></h1>
+          <a href= 'https://developers.giphy.com/'
+          style={{ textDecoration: 'none', color: 'black', padding:'10px'}}>
+          Powered by GIPHY</a>
         </header>
         <hr/>
         <div className="gifGrid">

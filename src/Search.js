@@ -14,7 +14,8 @@ class Search extends Component {
   render() {
       return (
           <div className="search">
-              <input placeholder='Search your favorite GIPHY here!' style={{color: "black", borderWidth: "thin", borderColor: "black"}}
+              <input placeholder='Search your favorite GIPHY here!'
+              style={{color: "black", borderWidth: "thin", borderColor: "black"}}
               onChange={event=> this.onInputChange(event.target.value)} />
           </div>
       );
