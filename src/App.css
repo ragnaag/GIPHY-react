@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  color: black;
 }
 
 .App-logo {
@@ -19,4 +20,109 @@
 
 .App-link {
   color: #09d3ac;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  height: 100px;
+  background: black;
+  color: white;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 3px solid #86bc25;
+  margin-top: auto;
+  margin-bottom: 35px;
+}
+
+a{
+  display: flex;
+  justify-content: space-around;
+  background: white;
+  margin-top: auto;
+  margin-bottom: auto;
+  position: relative;
+  box-shadow: 0.5px 0.5px 0.5px 0.5px #86bc25;
+  font-family: Optima, sans-serif;
+  height: fit-content;
+  margin-right: 10px;
+}
+
+li {
+    list-style-type: none;
+}
+p span {
+    display: block;
+}
+
+p{
+  font-family: Optima, sans-serif;
+  font-size: 28px;
+  margin-top: auto;
+  margin-bottom: auto;
+  white-space: pre-line;
+}
+
+p1{
+  font-family: Optima, sans-serif;
+  font-size: 18px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+input {
+  display: block;
+  font-size: 22px;
+  height: 50px;
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+  font-family: Optima, sans-serif;
+  -webkit-text-fill-color: #86bc25;
+}
+
+.img-grd{
+  /*box-shadow: 2px 2px 4px 0 #ccc;*/
+  display: flex;
+  flex-direction: column;
+  margin: 6px;
+  border: 1px solid transparent;
+  color: #222222;
+  text-decoration: none;
+  font-family: Optima, sans-serif;
+}
+
+.img-grd img{
+    width: 100%;
+}
+
+.img-grd:hover {
+	transform: scale(1.05);
+}
+
+.gif-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.trending-container{
+  font-family: Optima, sans-serif;
+  font-size: 38px;
+  color: black
+}
+
+@media screen and (max-width: 700px) {
+    input{
+      font-size: 15px;
+    }
 }
